@@ -15,11 +15,15 @@ header {
   align-items: center;
   justify-content: space-between;
   padding: 48px;
+  position: fixed;
+  background-color: black;
+  width: 100%;
 }
 
 form {
   display: flex;
-  padding: 0 48px;
+  padding: 182px 48px 48px;
+  width: fit-content;
 }
 
 .habits {
@@ -91,4 +95,10 @@ input:checked {
   font-weight: 600;
   font-size: 16px;
   line-height: 125%;
+}
+
+@media (max-width: 570px) {
+  bottom div {
+    display: none;
+  }
 }
